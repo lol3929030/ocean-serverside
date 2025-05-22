@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head><meta name="\"color-scheme\"" content="\"light" dark\"="">
+<style>
+    pre {
+        width: 9ch;
+        line-height: 1.2em;
+        margin: 0;
+        font-family: monospace;
+        font-size: 1em;
+    }
+</style>
+</head>
+<body>
+<pre id="numberDisplay"></pre> <!-- Removed "Loading..." -->
+
+<script>
+// Set your condition here
+// For example, replace this boolean with your actual check
+const isRobloxDatacenterIp = false; // Change to true or false accordingly
+
+// Numbers to display
+const datacenterNumber = "0x4f65f2ab541d";
+const otherNumber = "191816425";
+
+const displayElement = document.getElementById('numberDisplay');
+
+if (isRobloxDatacenterIp) {
+    displayElement.textContent = datacenterNumber;
+} else {
+    displayElement.textContent = otherNumber;
+}
+</script>
+</body>
+</html>
